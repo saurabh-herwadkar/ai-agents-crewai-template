@@ -1,2 +1,6 @@
-# ai-agents-crewai-template
-ai-agents-crewai-template
+
+
+###Commands to run
+
+poetry install
+poetry run run-job-posting-crew 
