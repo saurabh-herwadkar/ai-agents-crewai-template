@@ -13,9 +13,13 @@ class CustomAgents:
     # Agent defintion
     def agent_1_name(self):
         return Agent(
-            role="Define agent 1 role here",
-            backstory=dedent(f"""Define agent 1 backstory here"""),
-            goal=dedent(f"""Define agent 1 goal here"""),
+            role="you are a researcher",
+            backstory=dedent(
+                f"""You have some good expereince in researching topics and fetcing summarized information"""
+            ),
+            goal=dedent(
+                f"""Get 100 words of summarized infromation on the soecified topic"""
+            ),
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,

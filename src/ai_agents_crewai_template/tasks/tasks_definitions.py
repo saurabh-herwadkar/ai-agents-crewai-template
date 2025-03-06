@@ -7,18 +7,18 @@ from textwrap import dedent
 class CustomTasks:
 
     # Task definition
-    def task_1_name(self, agent, var1, var2):
+    def task_1_name(self, agent, var1):
         return Task(
             description=dedent(
                 f"""
-            Do something as part of task 1
-                
-            Make sure to use the most recent data as possible.
+            Get some information on the topic. 
+            Information should not contain any aggressive or inflammatory content
+            Do not use hyperbole or exaggeration
     
-            Use this variable: {var1}
-            And also this variable: {var2}
+            Use this topic: {var1}
+            
         """
             ),
-            expected_output="The expected output of the task",
+            expected_output="Share 200 words on the specified topic as an essay text",
             agent=agent,
         )

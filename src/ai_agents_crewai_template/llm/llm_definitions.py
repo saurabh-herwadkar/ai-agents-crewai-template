@@ -3,10 +3,6 @@ from langchain.llms import OpenAI, Ollama
 from langchain_openai import ChatOpenAI
 import os
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
 
 # Define LLMs
 class LLMDefinitions:

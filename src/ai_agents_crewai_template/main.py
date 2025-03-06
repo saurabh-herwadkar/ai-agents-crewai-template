@@ -1,16 +1,13 @@
 # Imports
 from dotenv import load_dotenv
 
+# Load environment
 load_dotenv()
-
-import os
-import logging
-
-logging.info("----------------------")
-logging.info(os.environ.get("OPENAI_API_KEY"))
-
 from ai_agents_crewai_template.crews.crews_definitions import CustomCrews
 import logging
+
+# Set logging level
+logging.getLogger().setLevel(logging.INFO)
 
 # Initalize
 custom_crew = CustomCrews()
