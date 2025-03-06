@@ -24,4 +24,4 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry.scripts]
-run-job-posting-crew = "ai_agents_crewai_template.main:run"
+run-agents = "ai_agents_crewai_template.main:run"
