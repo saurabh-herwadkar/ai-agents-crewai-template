@@ -1,5 +1,6 @@
 # Imports
 from dotenv import load_dotenv
+import os
 
 # Load environment
 load_dotenv()
@@ -17,7 +18,8 @@ custom_crew = CustomCrews()
 # Your crews related code will come here
 def run():
 
-    logging.info("----------------------")
+    logging.info("--------Entering main method--------------")
     crew_1 = custom_crew.crew_1_name()
     result = crew_1.kickoff()
+    logging.info("---------Leaving main method------------")
     return result
