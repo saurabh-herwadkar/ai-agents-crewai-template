@@ -2,6 +2,7 @@
 from crewai import Agent
 from textwrap import dedent
 from ai_agents_crewai_template.llm.llm_definitions import LLMDefinitions
+# Initialise
 llm_definitions = LLMDefinitions()
 
 # Define custom agents
