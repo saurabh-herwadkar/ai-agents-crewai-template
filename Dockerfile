@@ -1,5 +1,5 @@
 # Python docker
-FROM python:3.12-alpine
+FROM python:3.12-slim
 
 # Install pip and poetry
 RUN python -m pip install --upgrade pip

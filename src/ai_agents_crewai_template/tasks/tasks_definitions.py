@@ -1,14 +1,11 @@
 # Imports
 from crewai import Task
 from textwrap import dedent
-from ai_agents_crewai_template.agents.agents_definitions import CustomAgents
-# Initalize
-custom_agents = CustomAgents()
 
 
 # Define your tasks here
 class CustomTasks:
-    
+
     # Task definition
     def task_1_name(self, agent, var1, var2):
         return Task(
@@ -23,5 +20,5 @@ class CustomTasks:
         """
             ),
             expected_output="The expected output of the task",
-            agent=custom_agents.agent_1_name,
+            agent=agent,
         )
