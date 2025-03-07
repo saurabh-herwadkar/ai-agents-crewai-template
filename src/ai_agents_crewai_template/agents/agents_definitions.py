@@ -20,7 +20,7 @@ class CustomAgents:
                 f"""You have some good expereince in researching topics and fetcing summarized information"""
             ),
             goal=dedent(
-                f"""Get 100 words of summarized infromation on the soecified topic"""
+                f"""Get 200 words of summarized infromation on the specified topic"""
             ),
             tools=[serper_dev_tool],
             allow_delegation=False,
