@@ -22,12 +22,29 @@ class CustomAgents:
         return Agent(
             role="you are a researcher with good academic experience",
             backstory=dedent(
-                f"""You have some good expereince in researching topics and fetcing summarized information"""
+                f"""You have some good experience in researching topics and fetcing summarized information"""
             ),
             goal=dedent(
-                f"""Get 200 words of summarized infromation on the specified topic also creater a secret code of the text. please share both the text and the code"""
+                f"""Get 200 words of summarized infromation on the specified topic"""
             ),
-            tools=[serper_dev_tool, website_search_tool, secret_code_tool],
+            tools=[serper_dev_tool, website_search_tool],
+            allow_delegation=False,
+            verbose=True,
+            llm=llm_definitions.OpenAIGPT4,
+        )
+    
+
+    # Agent defintion
+    def agent_2_name(self):
+        return Agent(
+            role="you are an expert encrypter",
+            backstory=dedent(
+                f"""You can create secret hash codes of a text using secret code tools"""
+            ),
+            goal=dedent(
+                f"""Get a secret code of the 200 words of summarized essay"""
+            ),
+            tools=[secret_code_tool],
             allow_delegation=False,
             verbose=True,
             llm=llm_definitions.OpenAIGPT4,

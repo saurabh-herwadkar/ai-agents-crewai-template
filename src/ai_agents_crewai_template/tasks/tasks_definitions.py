@@ -14,12 +14,27 @@ class CustomTasks:
             Get some information on the topic. 
             Information should not contain any aggressive or inflammatory content
             Do not use hyperbole or exaggeration
-            onlky use the tools supplied to you and do not use any other tools
     
             Use this topic: {var1}
             
         """
             ),
-            expected_output="Share 200 words on the specified topic as an essay text also share the secret code",
+            expected_output="Share 200 words on the specified topic as an essay text",
+            agent=agent,
+        )
+    
+
+     # Task definition
+    def task_2_name(self, agent):
+        return Task(
+            description=dedent(
+                f"""
+           The previous task will return an essay of 200 words.
+           that will be the input text
+           use the secret code tool to creat a secret code and share it along with the 200 word essay
+            
+        """
+            ),
+            expected_output="Share the secret code and the essay both",
             agent=agent,
         )
