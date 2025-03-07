@@ -7,6 +7,11 @@ load_dotenv()
 from ai_agents_crewai_template.crews.crews_definitions import CustomCrews
 import logging
 
+# Load Agent ops
+import agentops
+
+agentops.init()
+
 # Set logging level
 logging.getLogger().setLevel(logging.INFO)
 
