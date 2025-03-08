@@ -24,7 +24,10 @@ class CustomCrews:
 
         # Return an instance of crew
         return Crew(
-            agents=[custom_agent_1,custom_agent_2],
-            tasks=[custom_tasks.task_1_name(custom_agent_1, var1), custom_tasks.task_2_name(custom_agent_2)],
+            agents=[custom_agent_1, custom_agent_2],
+            tasks=[
+                custom_tasks.task_1_name(custom_agent_1, var1),
+                custom_tasks.task_2_name(custom_agent_2),
+            ],
             verbose=True,
         )

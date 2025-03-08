@@ -12,6 +12,7 @@ python = ">=3.12,<=3.13"
 crewai = {extras = ["tools","agentops"], version = "^0.85.0"}
 python-dotenv = "^1.0.1"
 langchain-community = "^0.3.19"
+langchain-ollama = "^0.2.3"
 
 
 

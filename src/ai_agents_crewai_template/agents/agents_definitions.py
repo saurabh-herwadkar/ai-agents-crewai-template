@@ -30,9 +30,8 @@ class CustomAgents:
             tools=[serper_dev_tool, website_search_tool],
             allow_delegation=False,
             verbose=True,
-            llm=llm_definitions.OpenAIGPT4,
+            llm=llm_definitions.Ollama,
         )
-    
 
     # Agent defintion
     def agent_2_name(self):
@@ -41,11 +40,9 @@ class CustomAgents:
             backstory=dedent(
                 f"""You can create secret hash codes of a text using secret code tools"""
             ),
-            goal=dedent(
-                f"""Get a secret code of the 200 words of summarized essay"""
-            ),
+            goal=dedent(f"""Get a secret code of the 200 words of summarized essay"""),
             tools=[secret_code_tool],
             allow_delegation=False,
             verbose=True,
-            llm=llm_definitions.OpenAIGPT4,
+            llm=llm_definitions.Ollama,
         )

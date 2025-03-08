@@ -22,9 +22,8 @@ class CustomTasks:
             expected_output="Share 200 words on the specified topic as an essay text",
             agent=agent,
         )
-    
 
-     # Task definition
+    # Task definition
     def task_2_name(self, agent):
         return Task(
             description=dedent(
